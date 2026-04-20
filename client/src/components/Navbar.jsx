@@ -28,6 +28,7 @@ const Navbar = () => {
     { path: '/skills', label: 'Skills' },
     { path: '/cybersecurity', label: 'Cybersecurity' },
     { path: '/contact', label: 'Contact' },
+    { path: '/resume-generator', label: 'Resume Generator' },
     { path: '/profile-settings', label: 'Profile' },
   ];
 

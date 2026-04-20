@@ -12,6 +12,7 @@ const Skills = lazy(() => import('./pages/Skills'));
 const Cybersecurity = lazy(() => import('./pages/Cybersecurity'));
 const Contact = lazy(() => import('./pages/Contact'));
 const ProfileSettings = lazy(() => import('./pages/ProfileSettings'));
+const ResumeGenerator = lazy(() => import('./pages/ResumeGenerator'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
               <Route path="/cybersecurity" element={<Cybersecurity />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/profile-settings" element={<ProfileSettings />} />
+              <Route path="/resume-generator" element={<ResumeGenerator />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
