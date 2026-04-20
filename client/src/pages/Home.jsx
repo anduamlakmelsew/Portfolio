@@ -55,10 +55,6 @@ const Home = () => {
             <Link to="/contact" className="btn-secondary inline-flex items-center">
               Contact Me
             </Link>
-            <button className="px-6 py-3 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-lg transition-all duration-200 font-medium inline-flex items-center hover:shadow-lg hover:scale-105">
-              <Download className="mr-2" size={20} />
-              Download CV
-            </button>
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
             Portfolio
           </Link>
 
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 items-center">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -65,6 +65,17 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
+            
+            {/* CV Download Button */}
+            <a
+              href="/cv/Anduamlak_Melsew_CV.pdf"
+              download="Anduamlak_Melsew_CV.pdf"
+              className="px-4 py-2 bg-green-600 hover:bg-green-500 text-white rounded-lg transition-all duration-200 font-medium inline-flex items-center hover:shadow-lg hover:shadow-green-500/50 hover:brightness-110"
+              title="Download my professional CV (SOC Analyst)"
+            >
+              <Download className="mr-2" size={18} />
+              Download CV
+            </a>
           </div>
 
           <button
@@ -92,6 +103,18 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+            
+            {/* CV Download Button - Mobile */}
+            <a
+              href="/cv/Anduamlak_Melsew_CV.pdf"
+              download="Anduamlak_Melsew_CV.pdf"
+              className="mt-4 px-4 py-2 bg-green-600 hover:bg-green-500 text-white rounded-lg transition-all duration-200 font-medium inline-flex items-center hover:shadow-lg hover:shadow-green-500/50"
+              onClick={() => setIsOpen(false)}
+            >
+              <Download className="mr-2" size={18} />
+              Download CV
+            </a>
+            <p className="text-xs text-gray-400 mt-2">Download my professional CV (SOC Analyst)</p>
           </div>
         )}
       </div>
