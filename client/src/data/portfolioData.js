@@ -2,7 +2,7 @@ export const personalInfo = {
   name: "Anduamlak Melsew",
   title: "Cybersecurity Analyst (SOC Focus) | Full-Stack Developer",
   introduction: "Specialized in Security Operations Center (SOC) analysis, threat detection, and defensive cybersecurity. Combining deep security expertise with full-stack development skills to build secure, robust applications.",
-  email: "anduamlakmelsew@example.com",
+  email: "anduamlakmelseew@gmail.com",
   phone: "0931996468",
   telegram: "anduamlakmelsew",
   github: "https://github.com/anduamlakmelsew",
